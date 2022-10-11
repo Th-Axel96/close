@@ -2,12 +2,16 @@ import Image from "next/image";
 import Logo from "@src/assets/img/pexels-burak-karaduman-1549326.jpg";
 import img1 from "@src/assets/img/img1.jpg";
 
+
+
+
 let styles = {
   title: "uppercase underline text-lg text-center py-10",
   template: "grid grid-cols-3",
   templateItem1: "flex flex-col bg-green-500",
   templateItem2: "flex flex-row bg-purple-500",
   button: "flex flex-row w-full justify-center py-10",
+  cols3: "grid grid-cols-3"
 
 };
 
@@ -45,7 +49,7 @@ const Content = () => {
             facere! Distinctio veniam eaque repellendus eligendi, suscipit
             possimus nobis quisquam vero.
           </p>
-          <Image src={Logo} alt="Logo" />
+          <Image src={img1} alt="Logo" />
         </div>
         {/* COL 3 */}
         <div className={styles.templateItem2}>

@@ -11,7 +11,7 @@ export default function Document() {
           rel="stylesheet" 
         />
       </Head>
-      <body className="font-silkscreen">
+      <body className="font-silkscreen ">
         <Main />
         <NextScript />
       </body>
