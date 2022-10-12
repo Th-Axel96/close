@@ -1,8 +1,13 @@
 import React from "react";
 import { Animate, AnimateKeyframes, AnimateGroup } from "react-simple-animate";
+import NightsStayIcon from "@mui/icons-material/NightsStay";
+
+let styles = {
+  grid: "grid grid-cols-2",
+};
 
 export const SimpleAnimate = () => (
-  <>
+  <div>
     {/* animate individual element. */}
     <Animate play start={{ opacity: 0 }} end={{ opacity: 1 }}>
       <h1>React simple animate</h1>
@@ -10,14 +15,14 @@ export const SimpleAnimate = () => (
 
     {/* animate keyframes with individual element. */}
     <AnimateKeyframes
-      play
+     play
       delay={1}
       duration={10}
-      iterationCount={3}
+      iterationCount="infinite"
       direction="alternate"
-      keyframes={["transform: translateY(0)", "transform: translateY(10px)"]}
+      keyframes={["transform: translateY(550px)", "transform: translateX(550px)" ]}
     >
-      <h1>React simple animate with keyframes</h1>
+      <NightsStayIcon className="text-6xl" />
     </AnimateKeyframes>
 
     {/* animate group of animation in sequences */}
@@ -50,5 +55,5 @@ export const SimpleAnimate = () => (
         third
       </Animate>
     </AnimateGroup>
-  </>
+  </div>
 );

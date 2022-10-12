@@ -23,7 +23,8 @@
     "react-responsive-carousel": "^3.2.23",
     "react-responsive-navbar-overlay": "^1.1.3",
     "react-simple-animate": "^3.5.2",
-    "react-type-animation": "^2.1.1"
+    "react-type-animation": "^2.1.1",
+    "typewriter-effect": "^2.19.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.12",
