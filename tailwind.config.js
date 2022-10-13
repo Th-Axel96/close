@@ -9,6 +9,7 @@ module.exports = {
       fontFamily: {
         roboto: ["Roboto", "sans-serif"],
         silkscreen: ["silkscreen", "cursive"],
+        poppins:["Poppins", "sans-serif"],
       },
     },
   },

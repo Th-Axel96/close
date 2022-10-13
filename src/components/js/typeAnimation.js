@@ -1,31 +1,36 @@
 // TypeAnimation
 
+import { blue } from "@mui/material/colors";
 import { TypeAnimation } from "react-type-animation";
 
 let styles = {
-    
-}
+  flex: "flex justify-center",
+  test: "text-blue-500 uppercase",
+};
 
 
-const ExampleComponent = () => {
+const TypingAnimation = () => {
   return (
-    <TypeAnimation className="flex justify-center "
-      sequence={[
-        "Portfolio", // Types 'One'
-        1000, // Waits 1s
-        "Axel", // Deletes 'One' and types 'Two'
-        2000, // Waits 2s
-        "Moussart", // Types 'Three' without deleting 'Two'
-        () => {
-          console.log("Done typing!"); // Place optional callbacks anywhere in the array
-        },
-      ]}
-      wrapper="div"
-      cursor={true}
-      repeat={Infinity}
-      style={{ color:"blueviolet" , fontSize: "4em" }}
-    />
+    <div className="flex justify-center mx-40">
+      <TypeAnimation
+        // Same String at the start will only be typed once, initially
+        sequence={[,
+          "We produce food for Mice",
+          1000,
+          "We produce food for Hamsters",
+          1000,
+          "We produce food for Guinea Pigs",
+          1000,
+          "We produce food for Chinchillas",
+          1000,
+        ]}
+        speed={30} // Custom Speed from 1-99 - Default Speed: 40
+        style={{ color: blue, fontSize: "2em" }}
+        wrapper="span" // Animation will be rendered as a <span>
+        repeat={Infinity} // Repeat this Animation Sequence infinitely
+      />
+    </div>
   );
 };
 
-export default ExampleComponent
+export default TypingAnimation;

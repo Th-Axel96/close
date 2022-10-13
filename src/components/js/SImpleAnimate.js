@@ -1,10 +1,6 @@
 import React from "react";
 import { Animate, AnimateKeyframes, AnimateGroup } from "react-simple-animate";
-import NightsStayIcon from "@mui/icons-material/NightsStay";
-
-let styles = {
-  grid: "grid grid-cols-2",
-};
+import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 
 export const SimpleAnimate = () => (
   <div>
@@ -15,14 +11,19 @@ export const SimpleAnimate = () => (
 
     {/* animate keyframes with individual element. */}
     <AnimateKeyframes
-     play
+    
+      play
       delay={1}
-      duration={10}
+      duration={2}
       iterationCount="infinite"
       direction="alternate"
-      keyframes={["transform: translateY(550px)", "transform: translateX(550px)" ]}
+      keyframes={[
+        
+        "transform: translateY(0px)",
+        "transform: translateY(-100px)",
+      ]}
     >
-      <NightsStayIcon className="text-6xl" />
+      <ArrowDownwardIcon className="text-9xl text-white" />
     </AnimateKeyframes>
 
     {/* animate group of animation in sequences */}
