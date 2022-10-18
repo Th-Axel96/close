@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Logo from "@src/assets/img/pexels-burak-karaduman-1549326.jpg";
-import img1 from "@src/assets/img/img1.jpg";
+// import Logo from "@src/assets/img/pexels-burak-karaduman-1549326.jpg";
+// import img1 from "@src/assets/img/img1.jpg";
 
 
 
@@ -49,7 +49,7 @@ const Content = () => {
             facere! Distinctio veniam eaque repellendus eligendi, suscipit
             possimus nobis quisquam vero.
           </p>
-          <Image src={img1} alt="Logo" />
+          {/* <Image src={img1} alt="Logo" /> */}
         </div>
         {/* COL 3 */}
         <div className={styles.templateItem2}>

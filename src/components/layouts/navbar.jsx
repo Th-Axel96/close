@@ -1,37 +1,70 @@
-import Image from "next/image";
-import imgg from "@src/assets/img/img1.jpg";
-import AcUnitIcon from "@mui/icons-material/AcUnit";
+import Link from "next/link";
 
 let styles = {
-  navbar: "flex flex-row",
-  logo: "h-auto w-20 lg:w-40",
+  navmobile: "flex flex-col  items-center justify-around h-80 ",
+  border4x: "hover:border-x-4 border-black px-1 ",
 };
 
-const Navbar = () => {
+export const NavbarMobile = () => {
   return (
-    <nav className={styles.navbar}>
-      {/* LOGO */}
-      <div>
-        <Image src={imgg}  alt="Logo" className={styles.logo} />
-        <AcUnitIcon />
-      </div>
-
-      {/* NAVBAR */}
-      <div>
-        <ul>
-          <li>
-            <a href="#">Link 1</a>
-          </li>
-          <li>
-            <a href="#">Link 2</a>
-          </li>
-          <li>
-            <a href="#">Link 3</a>
-          </li>
-        </ul>
-      </div>
+    <nav>
+      <ul className={styles.navmobile}>
+        <li>
+          <Link href="/">
+            <a className={styles.border4x}>Home</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/">
+            <a className={styles.border4x}>Home</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/">
+            <a className={styles.border4x}>Home</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/">
+            <a className={styles.border4x}>Home</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/">
+            <a className={styles.border4x}>Home</a>
+          </Link>
+        </li>
+      </ul>
     </nav>
   );
 };
 
-export default Navbar;
+export const NavbarDesktop = () => {
+  return (
+    <nav>
+      <ul>
+       
+        <li>
+          <Link href="/">
+            <a>Home</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/">
+            <a>Home</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/">
+            <a>Home</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/">
+            <a>Home</a>
+          </Link>
+        </li>
+      </ul>
+    </nav>
+  );
+};
