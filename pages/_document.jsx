@@ -8,7 +8,7 @@ export default function Document() {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-          href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap"
+          href="https://fonts.googleapis.com/css2?family=League+Spartan&family=Open+Sans:wght@300&family=Poppins:wght@300&display=swap"
           rel="stylesheet"
         />
         {/* CDN Tailwind elements */}
@@ -26,7 +26,7 @@ export default function Document() {
         />
         <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
       </Head>
-      <body className="font-poppins ">
+      <body>
         <Main />
         <NextScript />
       </body>

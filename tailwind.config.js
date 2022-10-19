@@ -4,12 +4,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        gold: "#f8b700",
         darkBlue: "#0000D1",
       },
+     
       fontFamily: {
-        roboto: ["Roboto", "sans-serif"],
-        silkscreen: ["silkscreen", "cursive"],
-        poppins:["Poppins", "sans-serif"],
+        spartan: ["League Spartan", "sans-serif"],
+        open: ["Open Sans", "sans-serif"],
+        poppins: ["Poppins", "sans-serif"],
       },
     },
   },
