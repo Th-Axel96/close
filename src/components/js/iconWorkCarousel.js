@@ -9,8 +9,6 @@ import IconWebpack from "@src/assets/img/webpack.svg";
 import IconGit from "@src/assets/img/git.svg";
 import IconNetlify from "@src/assets/img/netlify.svg";
 
-
-
 export const IconWorkCarousel = () => {
   return (
     <div
@@ -26,7 +24,7 @@ export const IconWorkCarousel = () => {
             {/* div for groupe Icon language */}
             <div className="flex justify-center ">
               {/* div for BG icon 1 */}
-              <div className="bg-gray-500 h-32 w-24 rounded-3xl hover:scale-110 transition duration-500 ease-in-out">
+              <div className=" bg-gray-500 h-32 w-24 rounded-3xl hover:scale-110 transition duration-500 ease-in-out">
                 {/* div for IconHTML */}
                 <div className="flex flex-col items-center justify-center h-32">
                   <Image src={IconHtml} width="75px" height="75px" />

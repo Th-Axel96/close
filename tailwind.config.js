@@ -7,7 +7,7 @@ module.exports = {
         gold: "#f8b700",
         darkBlue: "#0000D1",
       },
-     
+
       fontFamily: {
         spartan: ["League Spartan", "sans-serif"],
         open: ["Open Sans", "sans-serif"],
