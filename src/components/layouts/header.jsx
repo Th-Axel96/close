@@ -1,41 +1,23 @@
 import { useState } from "react";
 // Navbar
-import { NavbarDesktop } from "./navbar";
-import { NavbarMobile } from "./navbar";
+import { NavbarDesktop } from "./navbarDesktop";
+import { NavbarMobile } from "./navbarMobile";
 // icon
 import MenuIcon from "@mui/icons-material/Menu";
 
-// emple useState
-// export const Header = () => {
-//   // function show with useState
-//   const [show, setShow] = useState(false);
-//   const Toggle = () => {
-//     setShow(!show);
-//   };
-//   return (
-//     <header className="bg-img ">
-//       <NavbarDesktop />
-//       <button onClick={Toggle}>
-//         <MenuIcon className="text-4xl md:hidden text-gold" />
-//       </button>
-//       {show === true ? <NavbarMobile /> : ""}
-//     </header>
-//   );
-// };
-
-
-
 export const Header = () => {
-  
+  // function show with useState
+  const [show, setShow] = useState(false);
+  const Toggle = () => {
+    setShow(!show);
+  };
   return (
-    <header>
-      
+    <header className="bg-img ">
       <NavbarDesktop />
-     <NavbarMobile  /> 
-      
-        <MenuIcon className="text-4xl md:hidden" />
-     
-     
+      <button onClick={Toggle}>
+        <MenuIcon className="text-4xl md:hidden text-gold" />
+      </button>
+      {show === true ? <NavbarMobile /> : ""}
     </header>
   );
 };

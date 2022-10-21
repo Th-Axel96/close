@@ -11,7 +11,6 @@ const HomePage = () => {
   return (
     <>
       <Header />
-
       <IconWorkCarousel />
 
       {/* <div className="flex justify-center text-blue-400 uppercase">

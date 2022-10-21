@@ -12,7 +12,7 @@ export const NavbarMobile = () => {
   return (
     <>
       <button
-        class="inline-block px-6 py-2.5  text-gold font-medium text-xs leading-tight uppercase rounded "
+        class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg  focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out mr-1.5"
         type="button"
         data-bs-toggle="offcanvas"
         data-bs-target="#offcanvasTop"
@@ -22,7 +22,7 @@ export const NavbarMobile = () => {
       </button>
 
       <div
-        class="offcanvas offcanvas-start fixed bottom-0 flex flex-col w-40 bg-brown invisible bg-clip-padding shadow-sm outline-none transition duration-1000 ease-in-out text-gray-700 top-0 left-0 right-0 border-none h-screen max-h-full"
+        class="offcanvas offcanvas-start fixed bottom-0 flex flex-col w-80 bg-white invisible bg-clip-padding shadow-sm outline-none transition duration-300 ease-in-out text-gray-700 top-0 left-0 right-0 border-none h-screen max-h-full"
         tabindex="-1"
         id="offcanvasTop"
         aria-labelledby="offcanvasTopLabel"

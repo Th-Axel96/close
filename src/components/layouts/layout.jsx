@@ -1,4 +1,4 @@
-import Navbar from "./navbar";
+import Navbar from "./navbarMobile";
 import Footer from "./footer";
 
 let styles = {
