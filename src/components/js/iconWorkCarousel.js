@@ -31,6 +31,7 @@ export const IconWorkCarousel = () => {
                 <div className="flex flex-col items-center justify-center h-32">
                   <Image src={IconHtml} width="75px" height="75px" />
                   <h2 className="">Html</h2>
+                  
                 </div>
               </div>
               {/* div for BG icon 2 */}
